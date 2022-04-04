@@ -1,1 +1,4 @@
-console.log("Hello there");
+import mainPage from './mainPage';
+
+
+mainPage();
