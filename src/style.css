@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+:root{
+    /* Color palette*/
+    --backgroundColor:#EEF5DB;
+    --headerColor:#4F6367;
+    --buttonColor:#FE5F55;
+    --notSureYet:#7A9E9F;
+    --notSureYet2:#B8D8D8;
+}
+body{
+    background-color: var(--backgroundColor);
+    height:100vh;
+}
+/**********************************header********************************************************************* */
+#headerDiv{
+    background-color: var(--headerColor);
+    height:200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#title{
+    grid-row: 1/2;
+    justify-self: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    grid-row: 2/3;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.navbarElement{
+    background: none;
+	color: none;
+	border: none;
+	padding: 5px;
+	outline: none;
+    height:20px;
+}
+
+.navbarElement:hover{
+    border-bottom: 2px solid black;
+    cursor:crosshair;
+}
+/**************************************************************************************************************** */
+/**************************************MainPage body************************************************************* */
+.contentBody{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/**************************************************************************************************************** */
