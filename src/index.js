@@ -1,7 +1,7 @@
 import mainPage from './mainPage';
 import './style.css';
 import mainPageBackground from './mainPageBackground.jpeg';
-import aboutPage from './aboutPage';
+import aboutPage from './aboutPage.js';
 
 const contentDiv=document.querySelector('#content');
 
@@ -39,14 +39,21 @@ const contentDiv=document.querySelector('#content');
     const homeButton=document.querySelector('#navbarHome');
     const aboutButton=document.querySelector('#navbarAbout');
 
+    //content
+    const contentBody=document.createElement('div');
+    contentDiv.append(contentBody);
+    contentBody.setAttribute('id','contentBody');
+
+
     mainPage(); //default setting
 
     homeButton.onclick = function(){
-        contentDiv.innerHTML
+        contentBody.innerHTML='';
         mainPage();
     };
 
     aboutButton.onclick = function(){
+        contentBody.innerHTML='';
         aboutPage();
     };
 
